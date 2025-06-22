@@ -14,7 +14,7 @@ body {
   border: 10px solid #333;
   border-radius: 50%;
   position: relative;
-  background-color: #4e39c0;
+  background-color: #e3e2e9;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -23,8 +23,8 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-weight: bold;
-  color: white;
+  font-weight: normal;
+  color: rgb(3, 3, 3);
   font-size: 1.2em;
 }
 
@@ -41,21 +41,22 @@ body {
 .aiguille.heure {
   width: 6px;
   height: 80px;
-  background-color: #fffefe;
+  background-color: #5f1212;
   transform: translateX(-50%) rotate(0deg);
 }
 
 .aiguille.minute {
   width: 4px;
   height: 120px;
-  background-color: #ffffff;
+  background-color: #fcfcfc;
+  border: 1px solid black;
   transform: translateX(-50%) rotate(72deg);
 }
 
 .aiguille.seconde {
   width: 2px;
   height: 130px;
-  background-color: rgb(243, 235, 235);
+  background-color: rgb(10, 65, 2);
   transform: translate(-50%) rotate(180deg);
 }
 
