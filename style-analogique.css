@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.horloge-analogique {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: relative;
+  background-color: #4e39c0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+}
+
+.aiguille {
+  position: absolute;
+  bottom: 50%; /* Place la base de l'aiguille au centre du cercle */
+  left: 50%;
+  transform-origin: bottom center; /* Le point de pivot est le bas de l'aiguille (centre de l'horloge) */
+  background-color: #333;
+  border-radius: 5px;
+  transform: translateX(-50%); /* Centre l'aiguille horizontalement */
+}
+
+.aiguille.heure {
+  width: 6px;
+  height: 80px;
+  background-color: #fffefe;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.aiguille.minute {
+  width: 4px;
+  height: 120px;
+  background-color: #ffffff;
+  transform: translateX(-50%) rotate(72deg);
+}
+
+.aiguille.seconde {
+  width: 2px;
+  height: 130px;
+  background-color: rgb(243, 235, 235);
+  transform: translate(-50%) rotate(180deg);
+}
+
+.centre {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(10, 12, 143);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centre le point au milieu de l'horloge */
+  z-index: 10; /* S'assure que le centre est au-dessus des aiguilles */
+}
